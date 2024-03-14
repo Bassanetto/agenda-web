@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../../../components/header/header.component';
-import { SidebarComponent } from '../../../components/sidebar/sidebar.component';
-import { CalendarioComponent } from '../calendario/calendario.component';
+import { CardModule } from 'primeng/card';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, SidebarComponent, CalendarioComponent],
+  imports: [CardModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
